@@ -1,0 +1,47 @@
+http://60.169.5.40/fs.vip.pc.kugou.com/201510251137/a45de658185aa365a408a5c293d01bf5/G010/M01/05/11/Sg0DAFUKiT-AKbIIAKOG7yPY_4w712.mp3
+
+主页地址：
+http://www2.kugou.kugou.com/yueku/v8/html/default.html?ver=7545
+
+可查询出歌手id：
+http://www2.kugou.kugou.com/yueku/v8/singer/name/getData.js?cdn=cdn&w=少司命&p=1&s=10
+查询出某歌手的歌曲：
+http://www2.kugou.kugou.com/yueku/v8/singer/song/getData.js?cdn=cdn&p=1&s=12&sid=85339
+查询出某歌手的专辑：
+http://www2.kugou.kugou.com/yueku/v8/singer/album/getData.js?cdn=cdn&sid=85339&p=1&s=20
+查询出某专辑的歌曲：
+http://www2.kugou.kugou.com/yueku/v8/album/song/getData.js?cdn=cdn&aid=547323
+
+歌手主页：
+http://www2.kugou.kugou.com/yueku/v8/singer/home/85339-0-0-s.html
+
+根据资料 http://bbs.125.la/thread-13622945-1-1.html 得知，以下地址可得到下载链接：
+http://trackercdn.kugou.com/i/?acceptMp3=1&pid=6&key=1a1464a90be9d540c76122caac4539af&cmd=3&hash=3aa72569fde8af05c61add090541b372
+
+根据资料 http://www.52pojie.cn/forum.php?mod=viewthread&tid=345474 得知，hash值是歌曲md5,key值是hash值附上kgcloud再md5得到。
+
+据http://www.52pojie.cn/thread-281192-1-1.html得知：
+    cmd=3是m4a格式，cmd=4是mp3格式。
+    pid=6是缓存链，pid=1是非缓存
+
+歌曲链接
+http://www.52pojie.cn/thread-281298-1-1.html
+
+
+
+
+最新版酷狗抓包：
+http://trackercdn.kugou.com/i/v2/?cmd=23&hash=fecdd91a2a3d2bae0efd00e9cfb47c44&key=0f4b153e893738416aa5405838b5e412&pid=1&vipToken=&behavior=play&appid=1001&version=7751
+
+歌词查询。返回格式为json。man为no由服务器选择一条最好的放回。man为yes列出所有匹配的歌词。hash为歌曲hash值，duration为歌曲持续时间（注：由歌曲查询接口查询到的信息中就包含此两项）。
+http://lyrics.kugou.com/search?ver=1&man=yes&client=pc&keyword=Critty%E3%80%81%E5%B0%91%E5%8F%B8%E5%91%BD%20-%20%E5%AE%BF%E5%91%BD&duration=267000&hash=fecdd91a2a3d2bae0efd00e9cfb47c44
+
+fmt的值为lrc则返回lrc歌词，krc则返回krc歌词。返回的是json格式，歌词被base64编码后放入其中。
+
+酷狗歌词解码
+http://www.52pojie.cn/thread-286822-1-1.html
+http://lyrics.kugou.com/download?ver=1&client=pc&id=15147453&accesskey=522A0EACB9A91C1E36CBD3F7DA81E6EA&fmt=krc&charset=utf8
+
+手机web版酷狗抓包：
+搜索歌曲, 但是似乎抓不到无损的hash
+http://mobilecdn.kugou.com/api/v3/search/song?format=jsonp&keyword=%E5%88%AB%E4%BA%86%E5%A4%8F%E5%A4%A9&page=1&pagesize=30&showtype=1&callback=kgJSONP505299152

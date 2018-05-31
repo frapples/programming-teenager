@@ -1,0 +1,50 @@
+
+GtkLabel
+{
+
+}
+
+
+#button-number
+{
+    background-size: 100% 100%;
+    background-origin:border-box;
+    /* background-image: url("png/style2_white.9.png"); */
+    background-image: url("png/style1_white.png");
+    /* background-repeat: [repeat|no-repeat|space|round|repeat-x|repeat-y]; */
+    border-color:  transparent transparent transparent transparent;
+}
+
+#button-number:active, #button-function:active, #button-operator:active
+{
+    /* background-image: url("png/style2_lightblue.9.png"); */
+    background-image: url("png/style1_lightblue.png");
+    border-color:  transparent transparent transparent transparent;
+}
+
+#button-function
+{
+    color: white;
+    background-size: 100% 100%;
+    background-origin:border-box;
+    background-image: url("png/style1_darkgray.png");
+}
+
+#button-operator
+{
+    color: white;
+    background-size: 100% 100%;
+    background-origin:border-box;
+    background-image: url("png/style1_darkblue.png");
+}
+
+#button-AC 
+{
+    color: white;
+    background-image: url("png/style1_red.png");
+    font-weight: bold;
+    font-size:   18px;
+    background-size: 100% 100%;
+    background-origin:border-box;
+}
+

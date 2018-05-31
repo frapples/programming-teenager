@@ -1,0 +1,1 @@
+starter\lua\wlua5.1.exe starter\start.lua
